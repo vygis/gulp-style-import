@@ -1,19 +1,19 @@
 # gulp-less-import
 
-Create less @import statements for each file provided.
+Create less/sass @import statements for each file provided.
 
-Heavily inspired by Steve Lacy's [mixer example](https://github.com/stevelacy/gulp-mix-test)
+Based on Jonathan Diehl's [gulp-less-import](https://github.com/jdiehl/gulp-less-import)
 
 ## Example
 
 ```
 var gulp = require('gulp');
-var lessImport = require('gulp-less-import');
+var styleImport = require('gulp-style-import');
 var less = require('gulp-less');
 
 gulp
   .src('**.less')
-  .pipe(lessImport('app.less'))
+  .pipe(styleImport('app.less'))
   .pipe(less())
   .pipe(gulp.dest('output/'));
 ```

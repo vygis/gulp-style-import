@@ -1,14 +1,14 @@
 {
-  "name": "gulp-less-import",
+  "name": "gulp-style-import",
   "version": "1.0.0",
-  "description": "Create less @import statements for each file provided",
-  "main": "gulp-less-import.js",
+  "description": "Create less/sass @import statements for each file provided",
+  "main": "gulp-style-import.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jdiehl/gulp-less-import.git"
+    "url": "https://github.com/vygis/gulp-style-import.git"
   },
   "keywords": [
     "gulp",
@@ -16,12 +16,12 @@
     "gulp-less",
     "import"
   ],
-  "author": "Jonathan Diehl",
+  "author": "Vygintas Ranonis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jdiehl/gulp-less-import/issues"
+    "url": "https://github.com/vygis/gulp-style-import/issues"
   },
-  "homepage": "https://github.com/jdiehl/gulp-less-import",
+  "homepage": "https://github.com/vygis/gulp-less-import",
   "dependencies": {
     "gulp-util": "^3.0.3",
     "through2": "^0.6.3"

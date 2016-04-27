@@ -5,12 +5,12 @@ var path = require('path');
 var through = require('through2');
 var gutil = require('gulp-util');
 
-module.exports = function (outname) {
+module.exports = function (options) {
   var imports = '';
 
   function write(file, enc, done) {
     if (file.path !== 'undefined') {
-      imports =  imports + '@import "' + path.relative(process.cwd(), file.path) + '";' + '\n';
+      imports =  imports + '@import "' + path.relative(options.cwd || process.cwd(), file.path) + '";' + '\n';
     }
     done();
   }
@@ -19,7 +19,7 @@ module.exports = function (outname) {
     /*jshint validthis:true */
 
     var newFile = new gutil.File({
-      path: outname,
+      path: options.fileName,
       contents: new Buffer(imports)
     });
 
